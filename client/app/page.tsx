@@ -6,7 +6,7 @@ import UrlList from './components/UrlList';
 import { UrlData } from './interface/url-data';
 
 
-const API_BASE_URL = "https://shortify-2f18.onrender.com/urls"; 
+const API_BASE_URL = "https://shortify-2f18.onrender.com"; 
 
 
 export default function UrlShortener() {
