@@ -71,7 +71,7 @@ export default function UrlShortener() {
   };
 
   const copyToClipboard = (code?: string) => {
-    const urlToCopy = code ? `${window.location.origin}/${code}` : shortUrl;
+    const urlToCopy = code ? `https://shortify-2f18.onrender.com/${code}` : shortUrl;
     navigator.clipboard.writeText(urlToCopy);
     
     if (code) {
