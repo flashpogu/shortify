@@ -53,7 +53,7 @@ app.post('/shorten', async (req, res) => {
     await client.set(shortCode, url);
 
     // Respond with shortened link
-    const shortUrl = `${process.env.BASE_URL || 'http://localhost:' + process.env.PORT}/${shortCode}`;
+    const shortUrl = `${process.env.API_BASE_URL || 'https://shortify-2f18.onrender.com'}/${shortCode}`;
     res.status(201).json({ short: shortUrl });
   } catch (err) {
     console.error('Error creating short URL:', err.message);
